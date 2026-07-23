@@ -11,8 +11,9 @@
     <input type="submit" value="追加"/>
   </form>
   <ul>
+    <%# 埋め込みjsで script を実行 :この行はejsのコメントアウトの方法です。%>
     <% for(let todo of todos){ %>
-      <li><span><%= todo %></span></li>
+      <li><span><%= todo.content %></span></li>
     <% } %>
   </ul>
   </body>
